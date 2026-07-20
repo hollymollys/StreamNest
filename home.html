@@ -10,13 +10,16 @@
 
     <title>Dashboard | StreamNest</title>
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -35,7 +38,9 @@
 
 <div class="dashboard">
 
-    <!-- Sidebar -->
+    <!-- ===========================
+            SIDEBAR
+    ============================ -->
 
     <aside class="sidebar">
 
@@ -43,49 +48,85 @@
 
             <i class="fa-solid fa-circle-play"></i>
 
-            <h2>Stream<span>Nest</span></h2>
+            <h2>
+
+                Stream<span>Nest</span>
+
+            </h2>
 
         </div>
 
         <div class="profile-summary">
 
-            <img src="images/avatar.png"
-                 alt="User">
+            <img
+                id="profileImage"
+                src="images/default-avatar.png"
+                alt="Profile">
 
-            <h3>John Creator</h3>
+            <h3 id="profileName">
 
-            <p>Premium Creator</p>
+                Loading...
+
+            </h3>
+
+            <p id="accountType">
+
+                Creator
+
+            </p>
 
         </div>
 
         <ul class="sidebar-menu">
 
             <li class="active">
+
                 <a href="home.html">
+
                     <i class="fa-solid fa-house"></i>
+
                     Dashboard
+
                 </a>
+
             </li>
 
             <li>
-                <a href="upload.html">
+
+                <a id="uploadVideoButton"
+                   href="upload.html">
+
                     <i class="fa-solid fa-upload"></i>
+
                     Upload
+
                 </a>
+
             </li>
 
             <li>
+
                 <a href="profile.html">
+
                     <i class="fa-solid fa-user"></i>
+
                     Profile
+
                 </a>
+
             </li>
 
             <li>
-                <a href="index.html">
+
+                <a id="logoutButton"
+                   href="#">
+
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
                     Logout
+
                 </a>
+
             </li>
 
         </ul>
@@ -94,17 +135,25 @@
 
 
 
-    <!-- Main Content -->
+    <!-- ===========================
+            MAIN CONTENT
+    ============================ -->
 
     <main class="main-content">
 
-        <!-- Top Navigation -->
+        <div
+            id="dashboardMessage"
+            class="dashboard-message">
+
+        </div>
+
+        <!-- Top Bar -->
 
         <header class="topbar">
 
             <div>
 
-                <h1>
+                <h1 id="welcomeMessage">
 
                     Welcome Back 👋
 
@@ -112,7 +161,7 @@
 
                 <p>
 
-                    Here's what's happening with your content today.
+                    Here's a quick look at your creator account.
 
                 </p>
 
@@ -120,12 +169,19 @@
 
             <div class="top-actions">
 
-                <a href="upload.html"
-                   class="btn-primary">
+                <div id="notificationBadge"
+                     class="notification-badge">
+
+                </div>
+
+                <a
+                    id="uploadNowButton"
+                    href="upload.html"
+                    class="btn-primary">
 
                     <i class="fa-solid fa-upload"></i>
 
-                    Upload Video
+                    Upload Media
 
                 </a>
 
@@ -135,7 +191,9 @@
 
 
 
-        <!-- Dashboard Statistics -->
+        <!-- ===========================
+                DASHBOARD STATS
+        ============================ -->
 
         <section class="stats-grid">
 
@@ -143,9 +201,17 @@
 
                 <i class="fa-solid fa-video"></i>
 
-                <h2>145</h2>
+                <h2 id="videoCount">
 
-                <p>Total Videos</p>
+                    0
+
+                </h2>
+
+                <p>
+
+                    Total Videos
+
+                </p>
 
             </div>
 
@@ -153,9 +219,17 @@
 
                 <i class="fa-solid fa-eye"></i>
 
-                <h2>89K</h2>
+                <h2 id="viewCount">
 
-                <p>Total Views</p>
+                    0
+
+                </h2>
+
+                <p>
+
+                    Total Views
+
+                </p>
 
             </div>
 
@@ -163,9 +237,17 @@
 
                 <i class="fa-solid fa-users"></i>
 
-                <h2>12.8K</h2>
+                <h2 id="followersCount">
 
-                <p>Followers</p>
+                    0
+
+                </h2>
+
+                <p>
+
+                    Followers
+
+                </p>
 
             </div>
 
@@ -173,9 +255,17 @@
 
                 <i class="fa-solid fa-hard-drive"></i>
 
-                <h2>32 GB</h2>
+                <h2 id="storageUsed">
 
-                <p>Storage Used</p>
+                    0 MB
+
+                </h2>
+
+                <p>
+
+                    Storage Used
+
+                </p>
 
             </div>
 
@@ -183,7 +273,9 @@
 
 
 
-        <!-- Recent Uploads -->
+        <!-- ===========================
+            RECENT UPLOADS
+        ============================ -->
 
         <section class="content-section">
 
@@ -195,7 +287,9 @@
 
                 </h2>
 
-                <a href="#">
+                <a
+                    id="viewAllVideos"
+                    href="#">
 
                     View All
 
@@ -203,83 +297,10 @@
 
             </div>
 
-
-
-            <div class="video-gallery">
-
-                <div class="video-card">
-
-                    <img src="images/video1.jpg"
-                         alt="Video">
-
-                    <div class="video-info">
-
-                        <h4>Building StreamNest On AWS</h4>
-
-                        <p>Uploaded 2 hours ago</p>
-
-                        <span>18K Views</span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="video-card">
-
-                    <img src="images/video2.jpg"
-                         alt="Video">
-
-                    <div class="video-info">
-
-                        <h4>Weekend Adventure</h4>
-
-                        <p>Uploaded Yesterday</p>
-
-                        <span>9K Views</span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="video-card">
-
-                    <img src="images/video3.jpg"
-                         alt="Video">
-
-                    <div class="video-info">
-
-                        <h4>Tech Setup Tour</h4>
-
-                        <p>Uploaded 3 Days Ago</p>
-
-                        <span>42K Views</span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="video-card">
-
-                    <img src="images/video4.jpg"
-                         alt="Video">
-
-                    <div class="video-info">
-
-                        <h4>My Coding Journey</h4>
-
-                        <p>Uploaded Last Week</p>
-
-                        <span>105K Views</span>
-
-                    </div>
-
-                </div>
+            <div
+                id="videoGallery"
+                class="video-gallery">
+                <!-- Video cards will be created dynamically by dashboard.js -->
 
             </div>
 
@@ -287,54 +308,147 @@
 
 
 
-        <!-- Recent Activity -->
+        <!-- ===========================
+                RECENT ACTIVITY
+        ============================ -->
 
         <section class="activity-section">
 
-            <h2>
+            <div class="section-header">
 
-                Recent Activity
+                <h2>
 
-            </h2>
+                    Recent Activity
 
-            <div class="activity-list">
+                </h2>
 
-                <div class="activity-item">
+            </div>
 
-                    <i class="fa-solid fa-circle-check"></i>
+            <div
+                id="activityList"
+                class="activity-list">
 
-                    <p>
+                <!-- Activities will be loaded here from the backend -->
 
-                        Your video <strong>"AWS Deployment Guide"</strong>
-                        has finished processing.
+            </div>
 
-                    </p>
+        </section>
+
+
+
+        <!-- ===========================
+                STORAGE INFORMATION
+        ============================ -->
+
+        <section class="content-section">
+
+            <div class="section-header">
+
+                <h2>
+
+                    Storage Overview
+
+                </h2>
+
+            </div>
+
+            <div class="dashboard-card storage-card">
+
+                <div class="storage-header">
+
+                    <h3>
+
+                        Storage Usage
+
+                    </h3>
+
+                    <span id="storagePercentage">
+
+                        0%
+
+                    </span>
 
                 </div>
 
-                <div class="activity-item">
+                <div class="progress-bar">
 
-                    <i class="fa-solid fa-user-plus"></i>
+                    <div
+                        id="storageProgress"
+                        class="progress-fill">
 
-                    <p>
-
-                        24 new users followed your channel today.
-
-                    </p>
+                    </div>
 
                 </div>
 
-                <div class="activity-item">
+                <p id="storageText">
 
-                    <i class="fa-solid fa-thumbs-up"></i>
+                    0 MB of 5 GB Used
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ===========================
+                QUICK ACTIONS
+        ============================ -->
+
+        <section class="content-section">
+
+            <div class="section-header">
+
+                <h2>
+
+                    Quick Actions
+
+                </h2>
+
+            </div>
+
+            <div class="quick-actions">
+
+                <a
+                    href="upload.html"
+                    class="action-card">
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    <h3>
+
+                        Upload Media
+
+                    </h3>
 
                     <p>
 
-                        Your latest upload received 2,450 likes.
+                        Upload a new video or image gallery.
 
                     </p>
 
-                </div>
+                </a>
+
+                <a
+                    href="profile.html"
+                    class="action-card">
+
+                    <i class="fa-solid fa-user-gear"></i>
+
+                    <h3>
+
+                        Edit Profile
+
+                    </h3>
+
+                    <p>
+
+                        Update your personal information.
+
+                    </p>
+
+                </a>
 
             </div>
 
@@ -344,7 +458,11 @@
 
 </div>
 
+<!-- Dashboard JavaScript -->
+
 <script src="js/app.js"></script>
+
+<script src="js/dashboard.js"></script>
 
 </body>
 

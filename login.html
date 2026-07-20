@@ -87,24 +87,28 @@
 
                 <div class="input-group">
 
-                    <label>Email Address</label>
+                    <label for="email">Email Address</label>
 
                     <input
                         type="email"
                         id="email"
+			name="email"
                         placeholder="you@example.com"
+			autocomplete="email"
                         required>
 
                 </div>
 
                 <div class="input-group">
 
-                    <label>Password</label>
+                    <label for="password">Password</label>
 
                     <input
                         type="password"
                         id="password"
+			name="password"
                         placeholder="Enter your password"
+			autocomplete="current-password"
                         required>
 
                 </div>
@@ -113,7 +117,10 @@
 
                     <label>
 
-                        <input type="checkbox">
+                        <input 
+				type="checkbox"
+				id="rememberMe"
+				name="rememberMe">
 
                         Remember Me
 
@@ -128,6 +135,7 @@
                 </div>
 
                 <button
+		    id="loginButton"
                     type="submit"
                     class="btn-primary full-width">
 
@@ -137,6 +145,10 @@
 
                 </button>
 
+		<div id="loginMessage" class="form-message"></div>
+
+		<div id="loginLoader" class="loader hidden"></div>
+
                 <div class="divider">
 
                     <span>OR</span>
@@ -144,6 +156,7 @@
                 </div>
 
                 <button
+		    id="googleLoginButton"
                     type="button"
                     class="google-btn">
 
@@ -157,7 +170,9 @@
 
                     Don't have an account?
 
-                    <a href="register.html">
+                    <a 
+		    id="registerLink"
+		    href="register.html">
 
                         Create One
 
@@ -167,7 +182,9 @@
 
                 <p class="home-link">
 
-                    <a href="index.html">
+                    <a 
+		    id="homeLink"	
+		    href="index.html">
 
                         ← Back to Home
 

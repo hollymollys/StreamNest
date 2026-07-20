@@ -57,11 +57,11 @@
 
         <div class="nav-buttons">
 
-            <a href="login.html" class="btn-outline">
-                Login
-            </a>
+            <a id="loginLink" href="login.html" class="btn-outline">
+    		Login
+	    </a>
 
-            <a href="register.html" class="btn-primary">
+	    <a id="registerLink" href="register.html" class="btn-primary">
                 Get Started
             </a>
 
@@ -103,13 +103,13 @@
 
             <div class="hero-buttons">
 
-                <a href="register.html" class="btn-primary hero-btn">
+                <a id="heroRegisterBtn" href="register.html" class="btn-primary hero-btn">
 
                     Create Free Account
 
                 </a>
 
-                <a href="login.html" class="btn-secondary">
+                <a id="heroLoginBtn" href="login.html" class="btn-secondary">
 
                     Login
 
@@ -319,12 +319,13 @@
 
                 <div class="profile-card">
 
-                    <img src="images/avatar.png"
-                        alt="Profile">
+                    <img id="profileImage" src="images/default-avatar.png" alt="Profile">
 
-                    <h3>John Creator</h3>
+                    <h3 id="profileName">
 
-                    <p>Premium Creator</p>
+                    	<p id="accounttype">
+			   Premium Creator
+		    </h3>	
 
                 </div>
 
@@ -356,7 +357,10 @@
 
                         <h3>Videos</h3>
 
-                        <span>145</span>
+                        <span id="videoCount">
+			
+				145
+			</span>
 
                     </div>
 
@@ -364,7 +368,11 @@
 
                         <h3>Views</h3>
 
-                        <span>89K</span>
+                        <span id="viewCount">
+			
+				89K
+				
+			</span>
 
                     </div>
 
@@ -372,7 +380,11 @@
 
                         <h3>Followers</h3>
 
-                        <span>12.8K</span>
+                        <span id="flowersCount">
+
+				12.8K
+
+			</span>
 
                     </div>
 
@@ -380,7 +392,11 @@
 
                         <h3>Storage</h3>
 
-                        <span>32GB</span>
+                        <span id="storageUsed">
+
+				32GB
+
+			</span>
 
                     </div>
 
@@ -502,8 +518,13 @@
 
                 </p>
 
-                <a href="upload.html"
-                   class="btn-primary">
+                <a
+
+		id="uploadNowBtn" 
+
+		href="upload.html"
+               
+   		class="btn-primary">
 
                     Upload Now
 
@@ -529,7 +550,11 @@
 
                 </p>
 
-                <button class="btn-secondary">
+                <button 
+
+		id="browseFilesBtn"
+
+		class="btn-secondary">
 
                     Browse Files
 
@@ -566,15 +591,25 @@
 
             <div class="cta-buttons">
 
-                <a href="register.html"
-                   class="btn-primary">
+                <a 
+
+		id="ctaResgisterBtn"
+
+		href="register.html"
+                
+		class="btn-primary">
 
                     Create Account
 
                 </a>
 
-                <a href="login.html"
-                   class="btn-outline">
+                <a
+		
+		id="ctaLoginBtn" 
+		
+		href="login.html"
+                
+		class="btn-outline">
 
                     Sign In
 

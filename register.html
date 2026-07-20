@@ -10,13 +10,16 @@
 
     <title>Create Account | StreamNest</title>
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -33,209 +36,296 @@
 
 <body>
 
-    <div class="login-container">
+<div class="login-container">
 
-        <!-- Left Panel -->
+    <!-- ===========================
+            LEFT PANEL
+    ============================ -->
 
-        <div class="login-left">
+    <div class="login-left">
 
-            <div class="brand">
+        <div class="brand">
 
-                <i class="fa-solid fa-circle-play"></i>
+            <i class="fa-solid fa-circle-play"></i>
 
-                <h1>Stream<span>Nest</span></h1>
+            <h1>
 
-            </div>
+                Stream<span>Nest</span>
+
+            </h1>
+
+        </div>
+
+        <h2>
+
+            Become A Creator
+
+        </h2>
+
+        <p>
+
+            Join thousands of creators already sharing videos,
+            image galleries and engaging with audiences worldwide.
+
+        </p>
+
+        <img
+            src="images/register-illustration.png"
+            alt="Register Illustration">
+
+    </div>
+
+
+
+    <!-- ===========================
+            RIGHT PANEL
+    ============================ -->
+
+    <div class="login-right">
+
+        <form id="registerForm">
 
             <h2>
 
-                Become A Creator
+                Create Account
 
             </h2>
 
             <p>
 
-                Create your free StreamNest account and begin
-                uploading videos and image galleries to your audience.
+                Fill in your information below to get started.
 
             </p>
 
-            <img src="images/register-illustration.png"
-                 alt="Register Illustration">
-
-        </div>
 
 
+            <!-- Full Name -->
 
-        <!-- Right Panel -->
+            <div class="input-group">
 
-        <div class="login-right">
+                <label for="fullname">
 
-            <form id="registerForm">
+                    Full Name
 
-                <h2>
+                </label>
 
-                    Create Account
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="John Doe"
+                    autocomplete="name"
+                    required>
 
-                </h2>
-
-                <p>
-
-                    Fill in your details below.
-
-                </p>
+            </div>
 
 
 
-                <div class="input-group">
+            <!-- Email -->
 
-                    <label>Full Name</label>
+            <div class="input-group">
+
+                <label for="email">
+
+                    Email Address
+
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required>
+
+            </div>
+
+
+
+            <!-- Username -->
+
+            <div class="input-group">
+
+                <label for="username">
+
+                    Username
+
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="johncreator"
+                    autocomplete="username"
+                    required>
+
+            </div>
+            <!-- Password -->
+
+            <div class="input-group">
+
+                <label for="password">
+
+                    Password
+
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a strong password"
+                    autocomplete="new-password"
+                    required>
+
+            </div>
+
+
+
+            <!-- Confirm Password -->
+
+            <div class="input-group">
+
+                <label for="confirmPassword">
+
+                    Confirm Password
+
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirm your password"
+                    autocomplete="new-password"
+                    required>
+
+            </div>
+
+
+
+            <!-- Terms & Conditions -->
+
+            <div class="remember-row">
+
+                <label>
 
                     <input
-                        type="text"
-                        id="fullname"
-                        placeholder="John Doe"
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
                         required>
 
-                </div>
+                    I agree to the
+                    <a href="#">Terms & Conditions</a>
 
+                </label>
 
+            </div>
 
-                <div class="input-group">
 
-                    <label>Email Address</label>
 
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="you@example.com"
-                        required>
+            <!-- Registration Message -->
 
-                </div>
+            <div
+                id="registerMessage"
+                class="form-message">
 
+            </div>
 
 
-                <div class="input-group">
 
-                    <label>Username</label>
+            <!-- Loading Spinner -->
 
-                    <input
-                        type="text"
-                        id="username"
-                        placeholder="johncreator"
-                        required>
+            <div
+                id="registerLoader"
+                class="loader hidden">
 
-                </div>
+            </div>
 
 
 
-                <div class="input-group">
+            <!-- Register Button -->
 
-                    <label>Password</label>
+            <button
+                id="registerButton"
+                type="submit"
+                class="btn-primary full-width">
 
-                    <input
-                        type="password"
-                        id="password"
-                        placeholder="Create a password"
-                        required>
+                <i class="fa-solid fa-user-plus"></i>
 
-                </div>
+                Create Account
 
+            </button>
 
 
-                <div class="input-group">
 
-                    <label>Confirm Password</label>
+            <div class="divider">
 
-                    <input
-                        type="password"
-                        id="confirmPassword"
-                        placeholder="Confirm password"
-                        required>
+                <span>
 
-                </div>
+                    OR
 
+                </span>
 
+            </div>
 
-                <div class="remember-row">
 
-                    <label>
 
-                        <input
-                            type="checkbox"
-                            required>
+            <!-- Google Sign Up -->
 
-                        I agree to the Terms & Conditions
+            <button
+                id="googleRegisterButton"
+                type="button"
+                class="google-btn">
 
-                    </label>
+                <i class="fa-brands fa-google"></i>
 
-                </div>
+                Continue with Google
 
+            </button>
 
 
-                <button
-                    type="submit"
-                    class="btn-primary full-width">
 
-                    <i class="fa-solid fa-user-plus"></i>
+            <p class="register-link">
 
-                    Create Account
+                Already have an account?
 
-                </button>
+                <a
+                    id="loginLink"
+                    href="login.html">
 
+                    Login
 
+                </a>
 
-                <div class="divider">
+            </p>
 
-                    <span>OR</span>
 
-                </div>
 
+            <p class="home-link">
 
+                <a
+                    id="homeLink"
+                    href="index.html">
 
-                <button
-                    type="button"
-                    class="google-btn">
+                    ← Back to Home
 
-                    <i class="fa-brands fa-google"></i>
+                </a>
 
-                    Sign Up With Google
+            </p>
 
-                </button>
-
-
-
-                <p class="register-link">
-
-                    Already have an account?
-
-                    <a href="login.html">
-
-                        Login
-
-                    </a>
-
-                </p>
-
-
-
-                <p class="home-link">
-
-                    <a href="index.html">
-
-                        ← Back to Home
-
-                    </a>
-
-                </p>
-
-            </form>
-
-        </div>
+        </form>
 
     </div>
 
-    <script src="js/register.js"></script>
+</div>
+
+<!-- Register Page JavaScript -->
+
+<script src="js/register.js"></script>
 
 </body>
 
