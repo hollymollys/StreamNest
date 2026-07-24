@@ -1,0 +1,23 @@
+# ====================================================
+# StreamNest .gitignore
+# ====================================================
+
+# Environment variables — NEVER push these to GitHub
+.env
+backend/.env
+
+# Node modules — reinstalled via npm install
+node_modules/
+backend/node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/

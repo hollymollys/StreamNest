@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamNest | Share Your Story</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-circle-play"></i>
+            </div>
+
+            <div class="logo-text">
+                Stream<span>Nest</span>
+            </div>
+
+        </div>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a class="active" href="index.html">Home</a></li>
+
+                <li><a href="#features">Features</a></li>
+
+                <li><a href="#preview">Preview</a></li>
+
+                <li><a href="#about">About</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="nav-buttons">
+
+            <a id="loginLink" href="login.html" class="btn-outline">
+                Login
+            </a>
+
+            <a id="registerLink" href="register.html" class="btn-primary">
+                Get Started
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+            HERO SECTION
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-left">
+
+            <span class="hero-badge">
+                🚀 Built for Modern Creators
+            </span>
+
+            <h1>
+
+                Upload.
+
+                Share.
+
+                Grow Your Audience.
+
+            </h1>
+
+            <p>
+
+                StreamNest is a modern streaming platform where creators
+                upload videos and image galleries, connect with their
+                audience, and grow their community from anywhere.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a id="heroRegisterBtn" href="register.html" class="btn-primary hero-btn">
+
+                    Create Free Account
+
+                </a>
+
+                <a id="heroLoginBtn" href="login.html" class="btn-secondary">
+
+                    Login
+
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div class="stat-box">
+
+                    <h2>25K+</h2>
+
+                    <p>Creators</p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h2>1.2M</h2>
+
+                    <p>Videos Shared</p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h2>99.99%</h2>
+
+                    <p>Availability</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="hero-right">
+
+            <div class="hero-card">
+
+                <img src="images/dashboard-preview.png"
+                    alt="Dashboard Preview">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+        FEATURE SECTION
+    ========================== -->
+
+    <section id="features" class="features">
+
+        <div class="section-title">
+
+            <span>Why StreamNest?</span>
+
+            <h2>
+
+                Everything You Need To Build A Creator Community
+
+            </h2>
+
+            <p>
+
+                Built with creators in mind.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                <h3>Fast Uploads</h3>
+
+                <p>
+
+                    Upload large videos and image galleries with ease.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-photo-film"></i>
+
+                <h3>Media Gallery</h3>
+
+                <p>
+
+                    Organize your content beautifully.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>Creator Analytics</h3>
+
+                <p>
+
+                    Understand your audience using simple dashboard
+                    statistics.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h3>Secure Platform</h3>
+
+                <p>
+
+                    Your media and user information stay protected.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>Community</h3>
+
+                <p>
+
+                    Connect with followers through videos and images.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-server"></i>
+
+                <h3>AWS Powered</h3>
+
+                <p>
+
+                    Reliable cloud infrastructure designed for growth.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+        DASHBOARD PREVIEW
+    ========================== -->
+
+    <section id="preview" class="dashboard-preview">
+
+        <div class="section-title">
+
+            <span>Dashboard</span>
+
+            <h2>
+
+                A Simple Creator Workspace
+
+            </h2>
+
+        </div>
+
+        <div class="dashboard-container">
+
+            <!-- Sidebar -->
+
+            <aside class="sidebar">
+
+                <div class="profile-card">
+
+                    <img id="profileImage" src="images/avatar.png" alt="Profile">
+
+                    <h3 id="profileName">
+
+                    	S Creator
+		    </h3>
+
+                </div>
+
+                <ul>
+
+                    <li><i class="fa-solid fa-house"></i> Dashboard</li>
+
+                    <li><i class="fa-solid fa-upload"></i> Upload</li>
+
+                    <li><i class="fa-solid fa-video"></i> My Videos</li>
+
+                    <li><i class="fa-solid fa-user"></i> Profile</li>
+
+                    <li><i class="fa-solid fa-right-from-bracket"></i> Logout</li>
+
+                </ul>
+
+            </aside>
+
+
+
+            <!-- Main Dashboard -->
+
+            <div class="dashboard-content">
+
+                <div class="stats">
+
+                    <div class="dashboard-card">
+
+                        <h3>Videos</h3>
+
+                        <span>145</span>
+
+                    </div>
+
+                    <div class="dashboard-card">
+
+                        <h3>Views</h3>
+
+                        <span>89K</span>
+
+                    </div>
+
+                    <div class="dashboard-card">
+
+                        <h3>Followers</h3>
+
+                        <span>12.8K</span>
+
+                    </div>
+
+                    <div class="dashboard-card">
+
+                        <h3>Storage</h3>
+
+                        <span>32GB</span>
+
+                    </div>
+
+                </div>
+		                <div class="video-gallery">
+
+                    <div class="video-card">
+
+                        <img src="images/video1.jpg"
+                             alt="Video Thumbnail">
+
+                        <div class="video-info">
+
+                            <h4>A Day In Lagos</h4>
+
+                            <p>John Creator</p>
+
+                            <span>12K Views • 2 Days Ago</span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="video-card">
+
+                        <img src="images/video2.jpg"
+                             alt="Video Thumbnail">
+
+                        <div class="video-info">
+
+                            <h4>Building My Startup</h4>
+
+                            <p>Sarah Wilson</p>
+
+                            <span>45K Views • 1 Week Ago</span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="video-card">
+
+                        <img src="images/video3.jpg"
+                             alt="Video Thumbnail">
+
+                        <div class="video-info">
+
+                            <h4>AWS Deployment Guide</h4>
+
+                            <p>Tech Master</p>
+
+                            <span>98K Views • 4 Days Ago</span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="video-card">
+
+                        <img src="images/video4.jpg"
+                             alt="Video Thumbnail">
+
+                        <div class="video-info">
+
+                            <h4>Weekend Adventure</h4>
+
+                            <p>Emily Stone</p>
+
+                            <span>8K Views • Yesterday</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+            UPLOAD PREVIEW
+    ========================== -->
+
+    <section class="upload-preview">
+
+        <div class="upload-container">
+
+            <div class="upload-left">
+
+                <span class="section-badge">
+
+                    Upload Content
+
+                </span>
+
+                <h2>
+
+                    Share Videos And Photos
+                    In Just A Few Clicks
+
+                </h2>
+
+                <p>
+
+                    Upload high-quality videos and image galleries.
+                    Your files are securely stored and ready to share
+                    with your audience.
+
+                </p>
+
+                <a href="upload.html"
+                   class="btn-primary">
+
+                    Upload Now
+
+                </a>
+
+            </div>
+
+
+
+            <div class="upload-box">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                <h3>
+
+                    Drag & Drop Your Files
+
+                </h3>
+
+                <p>
+
+                    MP4, JPG, PNG
+
+                </p>
+
+                <button class="btn-secondary">
+
+                    Browse Files
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+            CALL TO ACTION
+    ========================== -->
+
+    <section class="cta">
+
+        <div class="cta-content">
+
+            <h2>
+
+                Ready To Start Your Creator Journey?
+
+            </h2>
+
+            <p>
+
+                Join thousands of creators already growing
+                their audience on StreamNest.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="register.html"
+                   class="btn-primary">
+
+                    Create Account
+
+                </a>
+
+                <a href="login.html"
+                   class="btn-outline">
+
+                    Sign In
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+            ABOUT
+    ========================== -->
+
+    <section id="about" class="about">
+
+        <div class="section-title">
+
+            <span>About StreamNest</span>
+
+            <h2>
+
+                Built For Modern Content Creators
+
+            </h2>
+
+        </div>
+
+        <p class="about-text">
+
+            StreamNest is a cloud-powered media sharing platform where
+            creators upload videos and image galleries, manage their
+            content, track audience engagement, and grow their online
+            presence using a fast, secure, and reliable platform powered
+            by AWS.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+            FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-top">
+
+            <div>
+
+                <h3>🎬 StreamNest</h3>
+
+                <p>
+
+                    Share your story with the world.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>Platform</h4>
+
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+
+            </div>
+
+            <div>
+
+                <h4>Creators</h4>
+
+                <a href="#">Community</a>
+                <a href="#">Support</a>
+                <a href="#">Privacy</a>
+
+            </div>
+
+            <div>
+
+                <h4>Follow Us</h4>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 StreamNest. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,332 +1,162 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Create Account | StreamNest</title>
-
-    <!-- Google Fonts -->
-
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
-    <!-- Font Awesome -->
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <!-- Main CSS -->
-
-    <link rel="stylesheet"
-          href="css/style.css">
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create Account | StreamNest</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"/>
+<!-- Main CSS -->
+<link href="css/style.css" rel="stylesheet"/>
 </head>
-
 <body>
-
 <div class="login-container">
-
-    <!-- ===========================
+<!-- ===========================
             LEFT PANEL
     ============================ -->
-
-    <div class="login-left">
-
-        <div class="brand">
-
-            <i class="fa-solid fa-circle-play"></i>
-
-            <h1>
+<div class="login-left">
+<div class="brand">
+<i class="fa-solid fa-circle-play"></i>
+<h1>
 
                 Stream<span>Nest</span>
-
-            </h1>
-
-        </div>
-
-        <h2>
+</h1>
+</div>
+<h2>
 
             Become A Creator
 
         </h2>
-
-        <p>
+<p>
 
             Join thousands of creators already sharing videos,
             image galleries and engaging with audiences worldwide.
 
         </p>
-
-        <img
-            src="images/register-illustration.png"
-            alt="Register Illustration">
-
-    </div>
-
-
-
-    <!-- ===========================
+<img alt="Register Illustration" src="images/register-illustration.png"/>
+</div>
+<!-- ===========================
             RIGHT PANEL
     ============================ -->
-
-    <div class="login-right">
-
-        <form id="registerForm">
-
-            <h2>
+<div class="login-right">
+<form action="#" id="registerForm" method="POST" novalidate="">
+<h2>
 
                 Create Account
 
             </h2>
-
-            <p>
+<p>
 
                 Fill in your information below to get started.
 
             </p>
-
-
-
-            <!-- Full Name -->
-
-            <div class="input-group">
-
-                <label for="fullname">
+<!-- Full Name -->
+<div class="input-group">
+<label for="fullname">
 
                     Full Name
 
                 </label>
-
-                <input
-                    type="text"
-                    id="fullname"
-                    name="fullname"
-                    placeholder="John Doe"
-                    autocomplete="name"
-                    required>
-
-            </div>
-
-
-
-            <!-- Email -->
-
-            <div class="input-group">
-
-                <label for="email">
+<input autocomplete="name" id="fullname" name="fullname" placeholder="John Doe" required="" type="text"/>
+</div>
+<!-- Email -->
+<div class="input-group">
+<label for="email">
 
                     Email Address
 
                 </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="you@example.com"
-                    autocomplete="email"
-                    required>
-
-            </div>
-
-
-
-            <!-- Username -->
-
-            <div class="input-group">
-
-                <label for="username">
+<input autocomplete="email" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+</div>
+<!-- Username -->
+<div class="input-group">
+<label for="username">
 
                     Username
 
                 </label>
-
-                <input
-                    type="text"
-                    id="username"
-                    name="username"
-                    placeholder="johncreator"
-                    autocomplete="username"
-                    required>
-
-            </div>
-            <!-- Password -->
-
-            <div class="input-group">
-
-                <label for="password">
+<input autocomplete="username" id="username" name="username" placeholder="johncreator" required="" type="text"/>
+</div>
+<!-- Password -->
+<div class="input-group">
+<label for="password">
 
                     Password
 
                 </label>
-
-                <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Create a strong password"
-                    autocomplete="new-password"
-                    required>
-
-            </div>
-
-
-
-            <!-- Confirm Password -->
-
-            <div class="input-group">
-
-                <label for="confirmPassword">
+<input autocomplete="new-password" id="password" name="password" placeholder="Create a strong password" required="" type="password"/>
+</div>
+<!-- Confirm Password -->
+<div class="input-group">
+<label for="confirmPassword">
 
                     Confirm Password
 
                 </label>
-
-                <input
-                    type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    placeholder="Confirm your password"
-                    autocomplete="new-password"
-                    required>
-
-            </div>
-
-
-
-            <!-- Terms & Conditions -->
-
-            <div class="remember-row">
-
-                <label>
-
-                    <input
-                        type="checkbox"
-                        id="terms"
-                        name="terms"
-                        required>
+<input autocomplete="new-password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required="" type="password"/>
+</div>
+<!-- Terms & Conditions -->
+<div class="remember-row">
+<label>
+<input id="terms" name="terms" required="" type="checkbox"/>
 
                     I agree to the
-                    <a href="#">Terms & Conditions</a>
-
-                </label>
-
-            </div>
-
-
-
-            <!-- Registration Message -->
-
-            <div
-                id="registerMessage"
-                class="form-message">
-
-            </div>
-
-
-
-            <!-- Loading Spinner -->
-
-            <div
-                id="registerLoader"
-                class="loader hidden">
-
-            </div>
-
-
-
-            <!-- Register Button -->
-
-            <button
-                id="registerButton"
-                type="submit"
-                class="btn-primary full-width">
-
-                <i class="fa-solid fa-user-plus"></i>
+                    <a href="#">Terms &amp; Conditions</a>
+</label>
+</div>
+<!-- Registration Message -->
+<div class="form-message" id="registerMessage">
+</div>
+<!-- Loading Spinner -->
+<div class="loader hidden" id="registerLoader">
+</div>
+<!-- Register Button -->
+<button class="btn-primary full-width" id="registerButton" type="submit">
+<i class="fa-solid fa-user-plus"></i>
 
                 Create Account
 
             </button>
-
-
-
-            <div class="divider">
-
-                <span>
+<div class="divider">
+<span>
 
                     OR
 
                 </span>
-
-            </div>
-
-
-
-            <!-- Google Sign Up -->
-
-            <button
-                id="googleRegisterButton"
-                type="button"
-                class="google-btn">
-
-                <i class="fa-brands fa-google"></i>
+</div>
+<!-- Google Sign Up -->
+<button class="google-btn" id="googleRegisterButton" type="button">
+<i class="fa-brands fa-google"></i>
 
                 Continue with Google
 
             </button>
-
-
-
-            <p class="register-link">
+<p class="register-link">
 
                 Already have an account?
 
-                <a
-                    id="loginLink"
-                    href="login.html">
+                <a href="login.html" id="loginLink">
 
                     Login
 
                 </a>
-
-            </p>
-
-
-
-            <p class="home-link">
-
-                <a
-                    id="homeLink"
-                    href="index.html">
+</p>
+<p class="home-link">
+<a href="index.html" id="homeLink">
 
                     ← Back to Home
 
                 </a>
-
-            </p>
-
-        </form>
-
-    </div>
-
+</p>
+</form>
 </div>
-
+</div>
 <!-- Register Page JavaScript -->
 
-<script src="js/register.js"></script>
-
-</body>
-
+<script src="js/config.js"></script><script src="js/app.js"></script><script src="js/register.js"></script></body>
 </html>
